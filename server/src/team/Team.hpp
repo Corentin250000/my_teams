@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "Channel.hpp"
+#include "../channel/Channel.hpp"
 #include <iostream>
 #include <vector>
 
@@ -17,7 +17,7 @@ class Team {
         ~Team();
 
     private:
-        std::vector<Channel> _listChannels;
+        std::vector<Channel *> _listChannels;
         std::string _teamUuid;
         std::string _teamDescription;
 };

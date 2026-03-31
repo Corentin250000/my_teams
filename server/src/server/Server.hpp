@@ -7,17 +7,19 @@
 
 #pragma once
 
-#include "Team.hpp"
+#include "../team/Team.hpp"
 #include <iostream>
 #include <vector>
 
 class Server {
     public:
-        Server(unsigned short port) : _port(port), _delaySave(5) {}
+        Server(unsigned short port);
         ~Server();
 
+        unsigned short getPort() const;
+        int getDelaySave() const;
     private:
         unsigned short _port;
         int _delaySave; // In minutes
-        std::vector<Team> _listTeams;
+        std::vector<Team *> _listTeams;
 };

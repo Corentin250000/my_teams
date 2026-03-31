@@ -1,11 +1,8 @@
 /*
 ** EPITECH PROJECT, 2026
-** main.cpp
+** Team.cpp
 ** File description:
 ** ...
 */
 
-int main()
-{
-    return 0;
-}
+#include "Team.hpp"

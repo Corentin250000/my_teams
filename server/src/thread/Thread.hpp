@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "Comment.hpp"
+#include "../comment/Comment.hpp"
 #include <iostream>
 #include <vector>
 
@@ -17,7 +17,7 @@ class Thread {
         ~Thread();
 
     private:
-        std::vector<Comment> _listComments;
+        std::vector<Comment *> _listComments;
         std::string _threadUuid;
         std::string _threadBody;
 };

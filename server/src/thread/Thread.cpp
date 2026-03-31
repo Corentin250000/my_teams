@@ -1,11 +1,8 @@
 /*
 ** EPITECH PROJECT, 2026
-** main.cpp
+** Thread.cpp
 ** File description:
 ** ...
 */
 
-int main()
-{
-    return 0;
-}
+#include "Thread.hpp"

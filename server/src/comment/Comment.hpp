@@ -14,8 +14,10 @@
 class Comment {
     public:
         Comment();
+        Comment(std::string contentComment);
         ~Comment();
 
+        std::string getComment() const;
     private:
         std::string _comment;
 };

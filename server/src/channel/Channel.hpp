@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "Thread.hpp"
+#include "../thread/Thread.hpp"
 #include <iostream>
 #include <vector>
 
@@ -17,7 +17,7 @@ class Channel {
         ~Channel();
 
     private:
-        std::vector<Thread> _listThreads;
+        std::vector<Thread *> _listThreads;
         std::string _channelUuid;
         std::string _channelDescription;
 };
