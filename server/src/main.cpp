@@ -16,6 +16,7 @@ int main(int ac, char **av)
         port = getPort(ac, av[1]);
         (void) port;
     } catch (std::invalid_argument &e) {
+        std::cerr << e.what() << std::endl;
         return 84;
     }
     return 0;
