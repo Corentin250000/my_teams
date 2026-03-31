@@ -13,11 +13,14 @@
 
 class Channel {
     public:
-        Channel();
+        Channel(std::string uuid, std::string description);
+        Channel(std::string uuid);
         ~Channel();
 
+        std::string getUuid() const;
+        std::string getDescription() const;
     private:
         std::vector<Thread *> _listThreads;
-        std::string _channelUuid;
-        std::string _channelDescription;
+        std::string _uuid;
+        std::string _description;
 };

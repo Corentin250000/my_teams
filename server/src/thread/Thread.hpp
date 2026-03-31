@@ -13,11 +13,14 @@
 
 class Thread {
     public:
-        Thread();
+        Thread(std::string uuid, std::string body);
+        Thread(std::string uuid);
         ~Thread();
 
+        std::string getUuid() const;
+        std::string getBody() const;
     private:
         std::vector<Comment *> _listComments;
-        std::string _threadUuid;
-        std::string _threadBody;
+        std::string _uuid;
+        std::string _body;
 };

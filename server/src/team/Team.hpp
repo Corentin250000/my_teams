@@ -13,11 +13,14 @@
 
 class Team {
     public:
-        Team();
+        Team(std::string uuid, std::string description);
+        Team(std::string uuid);
         ~Team();
 
+        std::string getUuid() const;
+        std::string getDescription() const;
     private:
         std::vector<Channel *> _listChannels;
-        std::string _teamUuid;
-        std::string _teamDescription;
+        std::string _uuid;
+        std::string _description;
 };
