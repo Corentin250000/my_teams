@@ -5,6 +5,8 @@
 ** ...
 */
 
+#include "client/Client.hpp"
+
 int main(void)
 {
     return 0;
