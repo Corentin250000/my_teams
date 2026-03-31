@@ -6,8 +6,17 @@
 */
 
 #include "server/Server.hpp"
+#include "argumentsHandling/argumentsHandling.hpp"
 
-int main()
+int main(int ac, char **av)
 {
+    unsigned short port = 0;
+
+    try {
+        port = getPort(ac, av[1]);
+        (void) port;
+    } catch (std::invalid_argument &e) {
+        return 84;
+    }
     return 0;
 }
